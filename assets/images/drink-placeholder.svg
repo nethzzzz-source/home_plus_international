@@ -1,0 +1,20 @@
+<svg width="420" height="260" viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b4bff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#00b6ff" stop-opacity="0.22"/>
+    </linearGradient>
+    <linearGradient id="b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b4bff"/>
+      <stop offset="1" stop-color="#00b6ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="372" height="212" rx="22" fill="url(#g)" stroke="#0f3879" stroke-opacity="0.18"/>
+  <g transform="translate(74,62)">
+    <path d="M140 4c-18 0-34 12-38 29l-11 49c-2 9 6 18 15 18h88c9 0 17-9 15-18l-11-49c-4-17-20-29-38-29z" fill="rgba(255,255,255,0.75)" stroke="url(#b)" stroke-width="2"/>
+    <rect x="124" y="56" width="32" height="94" rx="16" fill="rgba(255,255,255,0.78)" stroke="#0f3879" stroke-opacity="0.20"/>
+    <path d="M140 162c-34 0-62 28-62 62h124c0-34-28-62-62-62z" fill="rgba(255,255,255,0.70)" stroke="#0f3879" stroke-opacity="0.18"/>
+  </g>
+  <text x="210" y="204" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="16" fill="#0b1633" fill-opacity="0.64">Product Placeholder</text>
+</svg>
+

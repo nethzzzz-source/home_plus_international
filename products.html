@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b4bff" />
+    <meta
+      name="description"
+      content="Home Plus International products - browse beverage categories, request a quote for bulk ordering, and enjoy reliable delivery for business customers."
+    />
+    <link rel="canonical" href="https://example.com/products" />
+    <meta property="og:title" content="Products | Home Plus International" />
+    <meta
+      property="og:description"
+      content="Browse beverage categories and request a quote for bulk ordering with reliable, secure delivery."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/products" />
+    <meta property="og:image" content="assets/images/drink-placeholder.svg" />
+    <title>Products | Home Plus International</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Home Plus International",
+        "url": "https://example.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "info@homeplus.example",
+          "telephone": "+49 000 000 000",
+          "contactType": "sales"
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="siteHeader"></div>
+
+    <main id="mainContent">
+      <section class="section">
+        <div class="container">
+          <div class="section-title" data-reveal>
+            <h1 style="margin:0;font-size:32px" data-i18n="nav.products">Products</h1>
+            <p data-i18n="products.b2b.copy">Wholesale ordering options, custom pricing for businesses, and flexible delivery schedules.</p>
+          </div>
+
+          <div class="products-shell" id="productsUi" data-reveal>
+            <div class="products-topbar">
+              <div>
+                <h2 style="margin:0;font-size:18px" data-i18n="products.b2b.title">Bulk & B2B Advantage</h2>
+                <p class="muted-note" style="margin:8px 0 0" data-i18n="products.why.copy">
+                  Efficiency, reliability, and scalable logistics—built for business growth.
+                </p>
+              </div>
+              <a class="btn btn-ghost" href="assets/catalog-placeholder.pdf" download data-i18n="footer.catalog"
+                >Download Catalog</a
+              >
+            </div>
+
+            <div class="products-topbar" style="margin-top:6px">
+              <div class="tabs" id="productsTabs" aria-label="Product categories"></div>
+              <div class="search">
+                <input
+                  id="productsSearch"
+                  type="text"
+                  data-i18n="products.search.placeholder"
+                  data-i18n-attr="placeholder"
+                />
+              </div>
+            </div>
+
+            <div id="productsGrid" class="products-grid" aria-live="polite"></div>
+          </div>
+
+          <div style="height:16px"></div>
+
+          <div class="cta-band" data-reveal>
+            <div>
+              <h3 data-i18n="products.why.title">Why Choose Us</h3>
+              <p data-i18n="products.why.copy">Efficiency, reliability, and scalable logistics—built for business growth.</p>
+            </div>
+            <div class="cta-right">
+              <a class="btn btn-primary" href="contact.html" data-i18n="home.cta.button">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="siteFooter"></div>
+
+    <!-- Quote modal -->
+    <!--div id="quoteModalOverlay" class="modal-overlay" hidden>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+        <div class="modal-header">
+          <strong id="quoteModalTitle" data-i18n="quote.modal.title">Request a Quote</strong>
+          <button class="icon-btn" type="button" data-quote-close data-i18n="quote.modal.close" aria-label="Close">
+            ✕
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="muted-note" data-i18n="quote.modal.note">
+            You will be redirected to our contact form with your request prefilled.
+          </div>
+
+          <div class="modal-grid">
+            <div>
+              <label data-i18n="quote.modal.product" style="margin-bottom:6px;display:block;font-weight:900">Selected product</label>
+              <div id="quoteProductName" style="font-weight:1000;letter-spacing:-0.15px;margin-top:6px">-</div>
+              <div class="muted-note" id="quoteProductMeta" style="margin-top:6px">-</div>
+            </div>
+            <div>
+              <label data-i18n="quote.modal.qty" style="margin-bottom:6px;display:block;font-weight:900">Quantity (estimated)</label>
+              <div class="qty" aria-label="Quantity selector">
+                <button type="button" data-qty-minus aria-label="Decrease quantity">−</button>
+                <input id="quoteQtyInput" inputmode="numeric" type="text" value="50" aria-label="Quantity" />
+                <button type="button" data-qty-plus aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <span class="muted-note" style="flex:1" data-i18n="quote.modal.note">
+              You will be redirected to our contact form with your request prefilled.
+            </span>
+            <button class="btn btn-primary" type="button" data-quote-submit data-i18n="quote.modal.send">Send Request</button>
+          </div>
+        </div>
+      </div>
+    </div-->
+
+    <script src="js/layout.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/animations.js" defer></script>
+
+    <script src="js/products-data.js" defer></script>
+    <script src="js/products-ui.js" defer></script>
+    <script src="js/quote-modal.js" defer></script>
+    <script src="js/contact.js" defer></script>
+  </body>
+</html>
+

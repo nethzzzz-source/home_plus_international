@@ -1,0 +1,14 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b4bff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#00b6ff" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect x="18" y="18" width="124" height="124" rx="38" fill="url(#g1)" fill-opacity="0.16" stroke="#0f3879" stroke-opacity="0.25"/>
+  <path d="M72 46h26l-5 28h-26l5-28z" fill="#0b4bff" fill-opacity="0.22" stroke="#0f3879" stroke-opacity="0.38" stroke-width="2"/>
+  <path d="M58 60h44l-10 54H48l10-54z" fill="#00b6ff" fill-opacity="0.18" stroke="#0f3879" stroke-opacity="0.30" stroke-width="2"/>
+  <path d="M54 120h52" stroke="#0b1633" stroke-opacity="0.25" stroke-width="8" stroke-linecap="round"/>
+  <text x="80" y="94" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="900" font-size="18" fill="#0b1633" fill-opacity="0.55">HP</text>
+</svg>
+

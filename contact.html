@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b4bff" />
+    <meta
+      name="description"
+      content="Contact Home Plus International for beverage distribution, wholesale supply, and reliable logistics."
+    />
+    <link rel="canonical" href="https://example.com/contact" />
+    <meta property="og:title" content="Contact | Home Plus International" />
+    <meta
+      property="og:description"
+      content="Send your inquiry to Home Plus International for reliable beverage distribution and wholesale supply."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/contact" />
+    <meta property="og:image" content="assets/images/drink-placeholder.svg" />
+    <title>Contact | Home Plus International</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Home Plus International",
+        "url": "https://example.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "info@homeplus.example",
+          "telephone": "+49 000 000 000",
+          "contactType": "sales"
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="siteHeader"></div>
+
+    <main id="mainContent">
+      <section class="section">
+        <div class="container">
+          <div class="section-title" data-reveal>
+            <h1 style="margin:0;font-size:32px" data-i18n="contact.page.title">Contact Home Plus International</h1>
+            <p data-i18n="contact.page.copy">Send your inquiry and we will prepare a competitive quote.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="panel" data-reveal>
+              <form data-contact-form data-contact-email="info@homeplus.example" id="quote">
+                <div class="form-row">
+                  <div>
+                    <label for="contactName" data-i18n="contact.name">Name</label>
+                    <input id="contactName" name="name" required />
+                    <div class="field-error" data-error-for="name" aria-live="polite"></div>
+                  </div>
+                  <div>
+                    <label for="contactEmail" data-i18n="contact.email">Email</label>
+                    <input id="contactEmail" name="email" type="email" required />
+                    <div class="field-error" data-error-for="email" aria-live="polite"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="contactCompany" data-i18n="contact.company">Company</label>
+                  <input id="contactCompany" name="company" />
+                </div>
+
+                <div>
+                  <label for="contactMessage" data-i18n="contact.message">Message</label>
+                  <textarea id="contactMessage" name="message" required></textarea>
+                  <div class="field-error" data-error-for="message" aria-live="polite"></div>
+                </div>
+
+                <div class="form-actions">
+                  <button class="btn btn-primary" type="submit" data-i18n="contact.submit">Send Request</button>
+                  <a class="btn btn-ghost" data-contact-mailto href="mailto:info@homeplus.example" data-i18n="contact.mailto.fallback"
+                    >Email draft</a
+                  >
+                </div>
+
+                <div class="success" data-contact-success hidden style="margin-top:8px">
+                  <strong data-i18n="contact.success.title">Message sent successfully</strong>
+                  <div data-i18n="contact.success.copy">Thank you. We will get back to you shortly.</div>
+                </div>
+              </form>
+            </div>
+
+            <div class="panel" data-reveal>
+              <h3 style="margin:0" data-i18n="contact.page.location">Location & Logistics</h3>
+              <p class="footer-muted" style="margin-top:10px" data-i18n="contact.page.map.placeholder">
+                Map placeholder (city/area).
+              </p>
+              <div style="height:10px"></div>
+              <div class="product-media" style="height:240px">
+                <div style="padding:18px;text-align:center;color:rgba(11,22,51,.65);font-weight:900">
+                  Map placeholder
+                </div>
+              </div>
+              <div style="height:10px"></div>
+              <p class="muted-note">
+                Wholesale inquiries are welcome. Include expected quantities so we can propose flexible delivery options.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-band" data-reveal>
+            <div>
+              <h3 data-i18n="products.b2b.title">Bulk & B2B Advantage</h3>
+              <p data-i18n="products.b2b.copy">Wholesale ordering options, custom pricing for businesses, and flexible delivery schedules.</p>
+            </div>
+            <div class="cta-right">
+              <a class="btn btn-primary" href="products.html" data-i18n="nav.products">Browse Products</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="siteFooter"></div>
+
+    <script src="js/layout.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/contact.js" defer></script>
+  </body>
+</html>
+
