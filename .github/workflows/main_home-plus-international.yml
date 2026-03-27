@@ -4,8 +4,6 @@
 
 name: Build and deploy Python app to Azure Web App - home-plus-international
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 on:
   push:
     branches:
@@ -65,9 +63,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_6995E44E555A44578737328005B34EA3 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_707EECA8119C4A6F9D2F290383E1895D }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_9FF6528A2F3A49899CE7E36F963B9C4A }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7107F566079248BE9E83AE7C300781E9 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_73EAA0845DF4423B81A4AE19637E10BD }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_40D2A971B6AB4FBF859DCA332C27DBB7 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
