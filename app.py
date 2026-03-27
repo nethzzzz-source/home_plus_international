@@ -1,13 +1,25 @@
-from flask import Flask
+from flask import Flask, send_from_directory, abort
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='.', static_url_path='')
 
 @app.route('/')
-def hello():
-    return "Hello! Your Python app is running on Azure F1 Tier."
+def index():
+    return send_from_directory(app.static_folder, 'index.html')
 
-if __name__ == "__main__":
-    # Azure uses port 8000 by default for Linux apps
-    port = int(os.environ.get("PORT", 8000))
-    app.run(host='0.0.0.0', port=port)
+@app.route('/<path:filename>')
+def serve_file(filename):
+    root = app.static_folder
+    full = os.path.join(root, filename)
+    # serve file if exact path exists (css/js/assets and explicit html)
+    if os.path.isfile(full):
+        return send_from_directory(root, filename)
+    # try filename.html for routes like /products
+    if '.' not in filename:
+        candidate = filename + '.html'
+        if os.path.isfile(os.path.join(root, candidate)):
+            return send_from_directory(root, candidate)
+    abort(404)
+
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=8000, debug=True)
